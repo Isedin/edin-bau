@@ -1,0 +1,89 @@
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 650px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../../assets/baustellenplanung.png") center/cover no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#header {
+  position: relative !important;
+  z-index: 1;
+}
+
+#header .container.full_height {
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+.achievement_container {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(-72px, -7vh, -36px);
+}
+
+.description {
+  overflow: visible;
+  z-index: 10;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#header .container * {
+  text-align: center;
+}
+
+#header .container {
+  padding-top: 2rem;
+}
+
+#header .container > .row {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+#header .container .row .column:first-child {
+  flex: 1;
+}
+
+#header .container .buttons_container {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+#header .image_container {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+
+#header .image_container:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  #header .container * {
+    text-align: center;
+  }
+  #header .container > .row {
+    flex-direction: column;
+  }
+  #header .container .buttons_container {
+    justify-content: center;
+  }
+}

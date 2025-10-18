@@ -1,13 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>edin-bau</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/edinbau-logo.jpg" />
+    <link rel="apple-touch-icon" href="/edinbau-logo.jpg" />
+
+    <!-- SEO / Social sharing -->
+    <meta property="og:image" content="/edinbau-logo.jpg" />
+    <meta property="og:title" content="Edin Bau GmbH" />
+    <meta property="og:description" content="Edin Bau GmbH - Bauunternehmen" />
+    <meta name="theme-color" content="#0047AB" />
+
+    <title>Edin Bau</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Structured data for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Edin Bau GmbH",
+        "url": "https://edin-bau-gmbh.com",
+        "logo": "https://edin-bau-gmbh.com/edinbau-logo.jpg"
+      }
+    </script>
   </body>
 </html>
