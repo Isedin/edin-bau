@@ -32,7 +32,7 @@ const Teams = () => {
     <section id="team" ref={container}>
       <div className="container">
         <h1 className="title">
-          Unsere <span className="g-text">Teams</span>
+          <span className="g-text">Unsere Teams</span>
         </h1>
         <h3 className="sub_title">
           Lernen Sie unseres vielfältigen Team aus kreativen Köpfen, Entwicklern

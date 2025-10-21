@@ -27,18 +27,20 @@ const Header = () => {
       <div className="hero-bg" aria-hidden />
 
       <header id="header" ref={container}>
-        <div className="container full_height">
+        <div className="container section-pad-top">
           <div className="row">
             <div className="column">
               <h1 className="title">
-                Träume bauen, <span className="g-text">Realität schaffen</span>
+                <span className="g-text">
+                  Verlässlichkeit in jedem Bauabschnitt
+                </span>
               </h1>
               <p className="text_muted description">
-                Wir haben es uns zur Aufgabe gemacht, Ihre Visionen in greifbare
-                Meisterwerke zu verwandeln. Mit jahrelanger Erfahrung und einem
-                Team aus qualifizierten sind wir auf die Bereitstellung
-                hochwertiger spezialisiert, die auf die individuellen
-                Bedürfnisse jedes Kunden zugeschnitten sind.
+                Als erfahrenes Bauunternehmen realisieren wir Projekte mit
+                höchster technischer Präzision und organisatorischer Effizienz.
+                Unser Anspruch ist es, jedes Vorhaben – ob im Wohn-, Gewerbe-
+                oder Industriebau – termingerecht, wirtschaftlich und qualitativ
+                auf höchstem Niveau umzusetzen.
               </p>
               {/* <div className="buttons_container">
               <Link to="services" className="btn" smooth={true} duration={1000}>

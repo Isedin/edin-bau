@@ -6,7 +6,7 @@ import Teams from "./components/Teams/teams";
 import Project from "./components/Project/project";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
-import Logo from "./components/Logo/logo";
+import Gallery from "./components/Gallery/gallery";
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
         <Navbar />
         <Header />
         <Services />
+        <Gallery />
         <About />
         <Project />
         <Teams />
         <Contact />
         <Footer />
-        <Logo />
       </div>
     </>
   );

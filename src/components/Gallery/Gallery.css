@@ -1,0 +1,126 @@
+#gallery .gallery_launch{
+  display: grid;
+  place-items: center;
+  gap: .4rem;
+  margin-top: 1.6rem;
+}
+
+#gallery .gallery_launch .hint{
+  font-size: .95rem;
+}
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+}
+
+.lightbox .overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(8,8,8,.55);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.lightbox_inner{
+  position: relative;
+  z-index: 1;
+  max-width: min(1200px, 92vw);
+  max-height: 86vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: .6rem;
+}
+
+.lightbox_inner img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  border-radius: var(--radius-2);
+}
+
+.lightbox_inner figcaption{
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.lb_btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.92);
+  color: #111;
+  border-radius: var(--radius-5);
+  width: 42px; height: 42px;
+  display: grid; place-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.lb_btn:hover{ transform: translateY(-50%) scale(1.06); }
+
+.lb_close{
+  top: -12px; right: -12px;
+  transform: none;
+  width: 40px; height: 40px; font-size: 22px;
+}
+
+.lb_prev{ left: 8px; }
+.lb_next{ right: 8px; }
+
+@media (min-width: 1040px){
+  .lb_prev{ left: -56px; }
+  .lb_next{ right: -56px; }
+}
+
+#gallery .thumb_strip{
+  display: flex;
+  gap: .6rem;
+  margin-top: 1rem;
+  padding: .25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+#gallery .thumb_mini{
+  flex: 0 0 auto;
+  width: 120px;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-2);
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: var(--color-ui-secondary);
+  box-shadow: var(--shadow-1);
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+  opacity: .95;
+  cursor: pointer;
+}
+
+#gallery .thumb_mini:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,.12);
+  opacity: 1;
+}
+
+#gallery .thumb_mini.is_active{
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+#gallery .thumb_mini img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* malo manji na uskim ekranima */
+@media (max-width: 640px){
+  #gallery .thumb_mini{ width: 96px; }
+}

@@ -1,3 +1,11 @@
+#team {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../../assets/about.jpg") center/cover no-repeat;
+}
+
 #team .teams_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -5,6 +13,7 @@
     margin-top: 3rem;
     overflow: hidden;
     justify-content: space-between;
+    
 }
 
 #team .team_card {

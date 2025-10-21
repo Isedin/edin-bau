@@ -23,18 +23,23 @@ const Achievement = () => {
 
   useGSAP(
     () => {
-      gsap.from(".stat_card", {
-        y: 40,
-        opacity: 0,
-        stagger: 0.2,
-        duration: 0.6,
-      });
+      gsap.fromTo(
+        ".stat_card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.6,
+          clearProps: "transform",
+        }
+      );
     },
     { scope: container }
   );
 
   return (
-    <section id="stats" className="stats">
+    <section id="stats" className="stats section-pad-bottom">
       <div className="container">
         <div className="stats_container" ref={container}>
           <div className="stat_card">

@@ -38,11 +38,11 @@ const Contact = () => {
         <div className="contact_form">
           <div className="contact_form_top">
             <h1 className="title">
-              <span className="g-text">Schließen Sie sich uns an!!</span>
+              <span className="g-text">Verbinden Sie sich mit den Profis!</span>
             </h1>
             <p className="text_muted">
-              Wir bauen mit Präzision und Leidenschaft und schaffen Strukturen,
-              die den Test der Zeit bestehen. So einfach ist das!
+              Vertrauen Sie auf Erfahrung, Präzision und Engagement – wir
+              begleiten Ihr Projekt vom ersten Entwurf bis zum letzten Stein.
             </p>
           </div>
           <div className="contact_form_middle">

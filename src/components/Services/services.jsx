@@ -30,29 +30,30 @@ const Services = () => {
 		{ scope: container }
 	);
 	return (
-		<section id="services" ref={container}>
-			<div className="container">
-				<div className="services_top">
-					<h1 className="title">
-						Unsere <span className="g-text">Botschaft</span>
-					</h1>
-					<h3 className="sub_title">
-						Wir sind spezialisiert auf strategische Bauinnovation
-					</h3>
-				</div>
-				<div className="services_container">
-					{services.map((service, index) => (
-						<ServiceCard
-							key={index}
-							icon={service.icon}
-							name={service.name}
-							description={service.description}
-						/>
-					))}
-				</div>
-			</div>
-		</section>
-	);
+    <section id="services" ref={container}>
+      <div className="container">
+        <div className="services_top">
+          <h1 className="title">
+            <span className="g-text">Unsere </span>
+            <span className="g-text">Philosophie</span>
+          </h1>
+          <h3 className="sub_title">
+            Kompetenz und Verantwortung in jedem Bauprojekt
+          </h3>
+        </div>
+        <div className="services_container">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              icon={service.icon}
+              name={service.name}
+              description={service.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Services;
