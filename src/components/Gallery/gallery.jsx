@@ -11,16 +11,20 @@ import {
   Kranarbeiten,
   Rohbau,
   Brueckenbau,
+  Baustellensohle,
+  Maurerarbeiten,
 } from "../../assets";
 
 const IMAGES = [
-  { src: Building1, title: "Büro- & Gewerbebauten" },
-  { src: Building2, title: "Wohnbau – Details" },
-  { src: Building3, title: "Industrie- & Logistikbauten" },
+  { src: Building1, title: "Büro- & Gewerbe Gebäude" },
+  { src: Building2, title: "Betonieren eines Wohbgebäude" },
+  { src: Building3, title: "Industrie- & Logistikhallen" },
   { src: Brueckenbau, title: "Ingenieurbau & Brückenbau" },
   { src: Privathaeuser, title: "Privathäuser & Villen" },
   { src: Kranarbeiten, title: "Großprojekte – Baustellen" },
   { src: Rohbau, title: "Rohbau & Tragwerk" },
+  { src: Baustellensohle, title: "Baustellensohle & Fundament"},
+  { src: Maurerarbeiten, title: "Maurerarbeiten & Mauerwerksbau"},
 ];
 
 const Gallery = () => {
