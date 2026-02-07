@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar/navbar";
 import Header from "./components/Header/header";
-import About from "./components/About/about";
+import About from "./components/About/About";
 import Services from "./components/Services/services";
 import Teams from "./components/Teams/teams";
 import Project from "./components/Project/project";
