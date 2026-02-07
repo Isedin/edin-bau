@@ -71,58 +71,22 @@ export const teams = [
   {
     name: "Ingenieure",
     profile: Baustellenplanung,
-    social: [
-      { name: "Facebook", icon: <CiFacebook />, url: "http://facebook.com" },
-      { name: "LinkedIn", icon: <CiLinkedin />, url: "http://linkedin.com" },
-      {
-        name: "Youtube",
-        icon: <FaYoutube />,
-        url: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
-      },
-      { name: "Instagram", icon: <FaInstagram />, url: "http://instagram.com" },
-    ],
+    
   },
   {
     name: "Maurerarbeiten",
     profile: Maurerarbeiten,
-    social: [
-      { name: "Facebook", icon: <CiFacebook />, url: "http://facebook.com" },
-      { name: "LinkedIn", icon: <CiLinkedin />, url: "http://linkedin.com" },
-      {
-        name: "Youtube",
-        icon: <FaYoutube />,
-        url: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
-      },
-      { name: "Instagram", icon: <FaInstagram />, url: "http://instagram.com" },
-    ],
+    
   },
   {
     name: "Brückenbau",
     profile: Brueckenbau,
-    social: [
-      { name: "Facebook", icon: <CiFacebook />, url: "http://facebook.com" },
-      { name: "LinkedIn", icon: <CiLinkedin />, url: "http://linkedin.com" },
-      {
-        name: "Youtube",
-        icon: <FaYoutube />,
-        url: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
-      },
-      { name: "Instagram", icon: <FaInstagram />, url: "http://instagram.com" },
-    ],
+    
   },
   {
     name: "Schalungsbauer",
     profile: Schalungsbauer,
-    social: [
-      { name: "Facebook", icon: <CiFacebook />, url: "http://facebook.com" },
-      { name: "LinkedIn", icon: <CiLinkedin />, url: "http://linkedin.com" },
-      {
-        name: "Youtube",
-        icon: <FaYoutube />,
-        url: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
-      },
-      { name: "Instagram", icon: <FaInstagram />, url: "http://instagram.com" },
-    ],
+    
   },
 ];
 

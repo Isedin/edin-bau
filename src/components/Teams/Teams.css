@@ -20,7 +20,7 @@
     background: var(--color-ui-secondary);
     border-radius: var(--radius-3);
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 1.2rem;
     overflow: hidden;
     padding: 1.2rem;
@@ -28,16 +28,17 @@
 
 #team .team_card .profile_container {
     width: 200px;
+    height: 150px;
     overflow: hidden;
     border-radius: var(--radius-3);
     transition: var(--transition);
 }
 
-#team .team.card:hover img {
+#team .team_card:hover img {
     transform: scale(1.2);
 }
 
-#team .team.card .details {
+#team .team_card .details {
     flex: 1;
 }
 
