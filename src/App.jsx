@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar/navbar";
 import Header from "./components/Header/header";
-import About from "./components/About/About";
+import About from "./components/About/about";
 import Services from "./components/Services/services";
 import Teams from "./components/Teams/teams";
 import Project from "./components/Project/project";
@@ -13,7 +13,7 @@ import Gallery from "./components/Gallery/gallery";
 
 function App() {
   useEffect(() => {
-  document.documentElement.style.overflowX = "hidden"; // ok ako želiš bez horizontalnog scrolla
+  document.documentElement.style.overflowX = "hidden";
   document.documentElement.style.overflowY = "auto";
 
   document.body.style.overflowX = "hidden";
