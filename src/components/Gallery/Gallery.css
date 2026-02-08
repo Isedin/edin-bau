@@ -120,6 +120,33 @@
   display: block;
 }
 
+.lightbox_inner video{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  border-radius: var(--radius-2);
+}
+
+
+#gallery .thumb_mini[data-type="video"]{
+  position: relative;
+}
+
+#gallery .thumb_mini[data-type="video"]::after{
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: white;
+  text-shadow: 0 6px 18px rgba(0,0,0,.6);
+  background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15));
+}
+
+
+
 /* malo manji na uskim ekranima */
 @media (max-width: 640px){
   #gallery .thumb_mini{ width: 96px; }

@@ -35,23 +35,28 @@ const Teams = () => {
           <span className="g-text">Unsere Teams</span>
         </h1>
         <h3 className="sub_title">
-          Lernen Sie unseres vielfältigen Team aus kreativen Köpfen, Entwicklern
-          und Strategen kennen – die treibende Kraft hinter dem Erfolg jedes
-          Projekts.
+          Lernen Sie unser starkes Team aus eigenem Architekten und erfahrenen Ingenieuren kennen – die treibende Kraft hinter präziser Planung, durchdachter Umsetzung und dem Erfolg jedes Projekts.
         </h3>
-        <div className="teams_container">
-          {teams.map((team, index) => (
-            <div className="team_card" key={index}>
-              <div className="profile_container">
-                <img src={team.profile} alt={team.name} />
-              </div>
-              <div className="details">
-                <h3 className="name">{team.name}</h3>
-                <p className="text_muted">{team.title}</p>
-              </div>
+       <div className="teams_container">
+        {teams.map((team, index) => (
+          <div
+            className={`team_card ${team.wide ? "team_card--wide" : ""}`}
+            key={index}
+          >
+            <div className="profile_container">
+              <img src={team.profile} alt={team.name} />
             </div>
-          ))}
+            <div className="details">
+              <h3 className="name">{team.name}</h3>
+              {team.title && <p className="text_muted">{team.title}</p>}
+            </div>
+            <div className="wide_badge">
+          <img src={team.badge} alt="" />
         </div>
+          </div>
+        ))}
+      </div>
+
       </div>
     </section>
   );

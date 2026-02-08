@@ -14,14 +14,13 @@ import {
   Building1,
   Building3,
   Maurerarbeiten,
-  Nachhaltigkeit,
+  ArchitectImage,
   Kranarbeiten,
-  Qualitaetbauen,
+  ArchitectBadgeImg,
   Rohbau,
   Schalungsbauer,
-  Privathaeuser,
   Brueckenbau,
-  Innovativesbauen,
+  ArchitekturUndBauplanung,
 } from "./assets";
 
 export const navTabs = [
@@ -36,9 +35,9 @@ export const navTabs = [
 
 export const services = [
   {
-    name: "Project Management",
+    name: "Project Management und Architektur",
     icon: <GrUserManager />,
-    description: `Unser Projektmanagement bildet das Rückgrat jedes erfolgreichen Bauvorhabens. Wir übernehmen die vollständige Steuerung von Planung, Zeitmanagement, Ressourcen und Qualitätssicherung – mit dem Ziel, Projekte termingerecht und innerhalb des vereinbarten Budgets umzusetzen.`,
+    description: `Unser Projektmanagement ist die zentrale Schnittstelle jedes Bauvorhabens. In enger Zusammenarbeit mit unserem Architekten und erfahrenen Ingenieuren steuern wir Planung, Termine, Ressourcen und Qualität – für eine zuverlässige Umsetzung innerhalb von Zeit- und Budgetrahmen.`,
   },
   {
     name: "Generellunternehmung",
@@ -68,6 +67,13 @@ export const services = [
 ];
 
 export const teams = [
+  {
+    name: "Architekt",
+    title: "Planung • Entwurf • Baukonzept",
+    profile: ArchitectImage,
+    badge: ArchitectBadgeImg,
+    wide: true,
+  },
   {
     name: "Ingenieure",
     profile: Baustellenplanung,
@@ -112,8 +118,8 @@ export const projects = [
     description: `Wir planen und errichten Industrie- und Logistikgebäude, die auf Effizienz, Wirtschaftlichkeit und Nachhaltigkeit ausgelegt sind. Ob Produktionshalle, Lager oder gesamtes Industrieareal – wir übernehmen die komplette Ausführung von der Fundamentierung bis zur schlüsselfertigen Übergabe.`,
   },
   {
-    title: "Privathäuser und Villen",
-    image: Privathaeuser,
+    title: "Architektur und Bauplanung",
+    image: ArchitekturUndBauplanung,
     description: `Wir begleiten Bauherren bei der Realisierung exklusiver Wohnprojekte – von modernen Stadtvillen bis zu individuellen Einfamilienhäusern. Hochwertige Materialien, präzise Ausführung und persönliche Betreuung garantieren Ergebnisse, die höchsten Ansprüchen gerecht werden.`,
   },
   {

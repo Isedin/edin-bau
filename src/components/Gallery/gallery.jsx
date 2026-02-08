@@ -2,35 +2,46 @@ import React, { useRef, useState, useEffect } from "react";
 import "./Gallery.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import VideoPosterBruecke from "../../assets/brueckenbau_video_poster.jpg";
+import VideoPosterMaurerei from "../../assets/maurerei_video_poster.jpg";
 
 import {
   Building1,
   Building2,
   Building3,
-  Privathaeuser,
+  Betongletten,
   Kranarbeiten,
   Rohbau,
   Brueckenbau,
+  Brueckenbau2,
+  Brueckenbau3,
   Baustellensohle,
   Maurerarbeiten,
+  BrueckenbauVideo,
+  MaurereiVideo,
 } from "../../assets";
 
 const IMAGES = [
-  { src: Building1, title: "Büro- & Gewerbe Gebäude" },
-  { src: Building2, title: "Betonieren eines Wohbgebäude" },
-  { src: Building3, title: "Industrie- & Logistikhallen" },
-  { src: Brueckenbau, title: "Ingenieurbau & Brückenbau" },
-  { src: Privathaeuser, title: "Privathäuser & Villen" },
-  { src: Kranarbeiten, title: "Großprojekte – Baustellen" },
-  { src: Rohbau, title: "Rohbau & Tragwerk" },
-  { src: Baustellensohle, title: "Baustellensohle & Fundament"},
-  { src: Maurerarbeiten, title: "Maurerarbeiten & Mauerwerksbau"},
+  { type: "image", src: Building1, title: "Büro- & Gewerbe Gebäude" },
+  { type: "image", src: Building2, title: "Betonieren eines Wohbgebäude" },
+  { type: "image", src: Building3, title: "Industrie- & Logistikhallen" },
+  { type: "image", src: Brueckenbau, title: "Brückenbau" },
+  { type: "image", src: Brueckenbau2, title: "Brückenbau – Detailansicht" },
+  { type: "image", src: Brueckenbau3, title: "Brückenbau – Baustelle" },
+  { type: "image", src: Betongletten, title: "Betongletten" },
+  { type: "image", src: Kranarbeiten, title: "Großprojekte – Baustellen" },
+  { type: "image", src: Rohbau, title: "Rohbau & Tragwerk" },
+  { type: "image", src: Baustellensohle, title: "Baustellensohle & Fundament"},
+  { type: "image", src: Maurerarbeiten, title: "Maurerarbeiten & Mauerwerksbau"},
+  { type: "video", src: BrueckenbauVideo, title: "Brückenbau Video", poster: VideoPosterBruecke },
+  { type: "video", src: MaurereiVideo, title: "Maurerei Video", poster: VideoPosterMaurerei },
 ];
 
 const Gallery = () => {
   const container = useRef(null);
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
+
 
   useGSAP(
     () => {
@@ -86,17 +97,22 @@ const Gallery = () => {
             className="thumb_strip"
             aria-label="Vorschau Galerie (scrollbar)"
           >
-            {IMAGES.map((img, i) => (
+            {IMAGES.map((item, i) => (
               <button
                 key={i}
                 className={`thumb_mini ${idx === i && open ? "is_active" : ""}`}
                 onClick={() => openAt(i)}
-                title={img.title}
-                aria-label={`Bild anzeigen: ${img.title}`}
+                title={item.title}
+                data-type={item.type}
               >
-                <img src={img.src} alt={img.title} loading="lazy" />
+                <img
+                  src={item.type === "video" ? item.poster : item.src}
+                  alt={item.title}
+                  loading="lazy"
+                />
               </button>
             ))}
+
           </div>
         </div>
       </div>
@@ -105,7 +121,21 @@ const Gallery = () => {
         <div className="lightbox" role="dialog" aria-modal="true">
           <div className="overlay" onClick={() => setOpen(false)} />
           <figure className="lightbox_inner">
-            <img src={IMAGES[idx].src} alt={IMAGES[idx].title} />
+            {IMAGES[idx].type === "image" ? (
+              <img src={IMAGES[idx].src} alt={IMAGES[idx].title} />
+            ) : (
+              <video
+                key={idx}
+                src={IMAGES[idx].src}
+                controls
+                autoPlay
+                muted
+                playsInline
+                loop
+                poster={IMAGES[idx].poster}
+                />
+  
+            )}
             <figcaption>{IMAGES[idx].title}</figcaption>
 
             <button

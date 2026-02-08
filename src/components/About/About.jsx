@@ -42,7 +42,7 @@ const About = () => {
             <span className="g-text">Über Uns</span>
           </h1>
           <h3 className="sub_title">
-            Qualität beginnt mit Planung – und endet mit Perfektion.
+            Qualität beginnt mit Planung und Architektur, endet schließlich mit Perfektion.
           </h3>
           <div className="company_media_container">
             <div className="box">
@@ -57,15 +57,8 @@ const About = () => {
           </div>
 
           <p className="text_muted description">
-            Die Edin Bau GmbH steht für präzise Planung, effiziente Ausführung
-            und nachhaltige Bauqualität. Unser Leistungsspektrum umfasst die
-            Entwicklung, Realisierung und Modernisierung von Wohn-, Gewerbe- und
-            Industrieprojekten. Mit einem interdisziplinären Team aus erfahrenen
-            Ingenieuren, Bauleitern und Facharbeitern garantieren wir höchste
-            Standards in allen Projektphasen – von der Konzeption bis zur
-            Fertigstellung. Unser Ziel ist es, dauerhafte Werte zu schaffen –
-            durch Qualität, Transparenz und eine verlässliche Partnerschaft mit
-            unseren Auftraggebern.
+            Die Edin Bau GmbH steht für präzise Planung und nachhaltige Bauqualität. Mit unserem firmeneigenen Architekten begleiten wir Bauprojekte ganzheitlich – von der architektonischen Planung bis zur schlüsselfertigen Umsetzung.
+            Wir realisieren Wohn-, Gewerbe- und Industrieprojekte effizient, zuverlässig und auf höchstem Qualitätsniveau.
           </p>
           <div className="group">
             <div className="row">
@@ -73,8 +66,8 @@ const About = () => {
                 <FaRegCompass />
               </div>
               <div className="details">
-                <p className="text_muted">Planung</p>
-                <h3>Präzision</h3>
+                <p className="text_muted">Planung und Architektur</p>
+                <h3>Eigene Architekten</h3>
               </div>
             </div>
 
@@ -84,7 +77,7 @@ const About = () => {
               </div>
               <div className="details">
                 <p className="text_muted">Expertise</p>
-                <h3>Ingenieure</h3>
+                <h3>Ingenieure mit langjähriger Erfahrung</h3>
               </div>
             </div>
 
@@ -94,7 +87,7 @@ const About = () => {
               </div>
               <div className="details">
                 <p className="text_muted">Partnerschaft</p>
-                <h3>Vertrauen</h3>
+                <h3>Vertrauen durch Zufriedenheit</h3>
               </div>
             </div>
 
@@ -104,7 +97,7 @@ const About = () => {
               </div>
               <div className="details">
                 <p className="text_muted">Qualität</p>
-                <h3>Zufriedenheit</h3>
+                <h3>Zufriedenheit durch Exzellenz</h3>
               </div>
             </div>
           </div>

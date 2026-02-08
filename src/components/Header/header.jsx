@@ -36,11 +36,7 @@ const Header = () => {
                 </span>
               </h1>
               <p className="text_muted description">
-                Als erfahrenes Bauunternehmen realisieren wir Projekte mit
-                höchster technischer Präzision und organisatorischer Effizienz.
-                Unser Anspruch ist es, jedes Vorhaben – ob im Wohn-, Gewerbe-
-                oder Industriebau – termingerecht, wirtschaftlich und qualitativ
-                auf höchstem Niveau umzusetzen.
+                Als erfahrenes Bauunternehmen realisieren wir Projekte mit höchster technischer Präzision. Mit eigenem Architekten und einem Team erfahrener Ingenieure gewährleisten wir effiziente Planung, klare Abläufe und eine Umsetzung auf höchstem Qualitätsniveau – im Wohn-, Gewerbe- und Industriebau.
               </p>
               {/* <div className="buttons_container">
               <Link to="services" className="btn" smooth={true} duration={1000}>
