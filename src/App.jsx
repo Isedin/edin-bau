@@ -25,11 +25,11 @@ function App() {
       <div>
         <Navbar />
         <Header />
-        <Services />
-        <Gallery />
-        <About />
         <Project />
+        <Gallery />
         <Teams />
+        <Services />
+        <About />
         <Contact />
         <Footer />
       </div>
