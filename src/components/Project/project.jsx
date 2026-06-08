@@ -37,22 +37,15 @@ const Project = () => {
 
   const settings = {
     infinite: true,
-    speed: 2000,
-    slidesToShow: 2,
-    centerMode: true,
+    speed: 1600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    centerPadding: "0px",
     pauseOnHover: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          centerPadding: 0,
-          arrows: false,
-        },
-      },
-    ],
+    autoplaySpeed: 2500,
+    arrows: false,
   };
 
   return (
@@ -68,7 +61,7 @@ const Project = () => {
 
       <Slider {...settings} className="projects_container">
         {projects.map((project, index) => (
-          <React.Fragment key={index}>
+          <div className="project_card" key={index}>
             <div className="image_container">
               <img src={project.image} alt={project.title} />
             </div>
@@ -81,7 +74,7 @@ const Project = () => {
               <h3 className="name">{project.title}</h3>
               <p className="text_muted_description">{project.description}</p>
             </div>
-          </React.Fragment>
+          </div>
         ))}
       </Slider>
     </section>
