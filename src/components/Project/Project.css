@@ -75,6 +75,77 @@
 	margin: 20px 0;
 }
 
+#project .project_card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background: var(--gradient-1);
+}
+
+#project .project_card .image_container {
+  overflow: hidden;
+}
+
+#project .project_card .image_container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#project .project_card:hover img {
+  transform: scale(1.2);
+}
+
+#project .project_card .box {
+  padding: 0 20px;
+  color: var(--color-white);
+}
+
+#project .project_card .details {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(100px);
+  transition: var(--transition);
+}
+
+#project .project_card:hover .details {
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  #project .slick-slide {
+    padding: 0 16px;
+  }
+
+  #project .project_card {
+    min-height: 360px;
+  }
+
+  #project .project_card .image_container {
+    height: 260px;
+  }
+
+  #project .project_card .image_container img {
+    height: 100%;
+  }
+
+  #project .project_card .name {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+}
+
 @media (max-width: 600px) {
   #project .slick-list {
     overflow: hidden;
