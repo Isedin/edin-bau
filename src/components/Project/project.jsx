@@ -36,6 +36,7 @@ const Project = () => {
     infinite: true,
     speed: 2000,
     slidesToShow: 2,
+    slidesToScroll: 1,
     centerMode: true,
     pauseOnHover: true,
     autoplay: true,
